@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "378853428763",
+    "firebase_url": "https://diploma-65854.firebaseio.com",
+    "project_id": "diploma-65854",
+    "storage_bucket": "diploma-65854.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:378853428763:android:aa4a121d8bc1829c",
+        "android_client_info": {
+          "package_name": "com.example.diploma"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "378853428763-gdj1vfe198dhoteaba1a79vsqfg8d4oi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGDUFfr1A_an6f5DoWzCJ6QzxvV6m1A04"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "378853428763-gdj1vfe198dhoteaba1a79vsqfg8d4oi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:378853428763:android:f191200ac72c8e35",
+        "android_client_info": {
+          "package_name": "com.example.user.carwash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "378853428763-gdj1vfe198dhoteaba1a79vsqfg8d4oi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGDUFfr1A_an6f5DoWzCJ6QzxvV6m1A04"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "378853428763-gdj1vfe198dhoteaba1a79vsqfg8d4oi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

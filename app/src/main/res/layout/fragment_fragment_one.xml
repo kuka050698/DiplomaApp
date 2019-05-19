@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".FragmentOne"
+        android:background="@drawable/backgrounnd">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+            android:id="@+id/general"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="230dp">
+        <LinearLayout
+                android:layout_width="243dp"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+            <TextView
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:id="@+id/text_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:layout_gravity="center"
+                    android:text="Kuanysh"
+                    android:textColor="#fff" android:layout_marginTop="66dp"
+                    app:layout_constraintHorizontal_bias="0.586"/>
+            <TextView
+                    android:id="@+id/text_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:layout_gravity="center"
+                    android:text="Yessenzhanov"
+                    android:textColor="#fff"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintHorizontal_bias="0.586"/>
+        </LinearLayout>
+
+
+        <ImageView
+                android:id="@+id/profile_general"
+                app:layout_constraintTop_toBottomOf="@id/text_one"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:src="@drawable/circlekuanysh"
+                android:layout_width="171dp"
+                android:layout_height="149dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintHorizontal_bias="0.0"/>
+    </LinearLayout>
+    <TableLayout
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/general"
+            android:layout_width="415dp"
+            android:layout_height="500dp"
+            android:stretchColumns="*">
+
+        <TableRow android:background="#fff"
+                  android:padding="5dp">
+            <TextView
+                    android:id="@+id/tab_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="General Information"
+                    android:layout_span="2"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center_horizontal"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        </TableRow>
+        <TableRow android:padding="5dp">
+            <TextView
+                      android:layout_width="209dp"
+                      android:layout_height="wrap_content"
+                      android:text="Name"
+                      android:gravity="center_horizontal"
+                      android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+            <TextView
+                    android:id="@+id/name_tab"
+                    android:layout_width="200dp"
+                      android:layout_height="wrap_content"
+                      android:text="Kuanysh"
+                      android:gravity="center_horizontal"
+                      android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+        </TableRow>
+        <TableRow android:padding="5dp">
+            <TextView android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Surname"
+                      android:gravity="center_horizontal"
+                      android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+            <TextView
+                        android:id="@+id/surname_tab"
+                    android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Yessenzhanov"
+                      android:gravity="center_horizontal"
+                      android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+        </TableRow>
+        <TableRow android:padding="5dp">
+            <TextView
+                    android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Pinned clinic"
+                      android:gravity="center_horizontal"
+                      android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+            <TextView
+                    android:id="@+id/clinic_tab"
+                    android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Mediker"
+                      android:gravity="center_horizontal"
+                      android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+        </TableRow>
+        <TableRow android:padding="5dp">
+            <TextView android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Blood group"
+                      android:gravity="center_horizontal"
+                      android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+            <TextView
+                    android:id="@+id/blood_tab"
+                    android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:text="2"
+                      android:gravity="center_horizontal"
+                      android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+        </TableRow>
+        <TableRow android:padding="5dp">
+            <TextView android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Rhesus factor"
+                      android:gravity="center_horizontal"
+                      android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+            <TextView
+                    android:id="@+id/rhesus_tab"
+                    android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:text="+"
+                      android:gravity="center_horizontal"
+                      android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+        </TableRow>
+        <TableRow android:padding="5dp">
+            <TextView android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Doctor's name"
+                      android:gravity="center_horizontal"
+                      android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+            <TextView
+                    android:id="@+id/doctor_name_tab"
+                    android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Dr Gulbanu"
+                      android:gravity="center_horizontal"
+                      android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+        </TableRow>
+        <TableRow android:padding="5dp">
+            <TextView android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Occupation"
+                      android:gravity="center_horizontal"
+                      android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+            <TextView
+                    android:id="@+id/occupation_tab"
+                    android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Cardiologist"
+                      android:gravity="center_horizontal"
+                      android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+        </TableRow>
+        <TableRow android:padding="5dp">
+            <TextView android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Allergies"
+                      android:gravity="center_horizontal"
+                      android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+            <TextView
+                    android:id="@+id/allergies_tab"
+                    android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:text="No"
+                      android:gravity="center_horizontal"
+                      android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+        </TableRow>
+        <TableRow android:padding="5dp">
+            <TextView android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Clinic phone number"
+                      android:gravity="center_horizontal"
+                      android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+            <TextView
+                    android:id="@+id/company_phone__tab"
+                    android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:text="8 (7272) 59 73 95"
+                      android:gravity="center_horizontal"
+                      android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+        </TableRow>
+        <TableRow android:padding="5dp">
+            <TextView android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Implanted devices"
+                      android:gravity="center_horizontal"
+                      android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+            <TextView
+                    android:id="@+id/implanted_devices_tab"
+                    android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:text="No"
+                      android:gravity="center_horizontal"
+                      android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+        </TableRow>
+        <TableRow android:padding="5dp">
+            <TextView android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Chronic diseases"
+                      android:gravity="center_horizontal"
+                      android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+            <TextView
+                    android:id="@+id/chronic_diseases_tab"
+                    android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:text="No"
+                      android:gravity="center_horizontal"
+                      android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+        </TableRow>
+        <TableRow android:padding="5dp">
+            <TextView android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Surgeries"
+                      android:gravity="center_horizontal"
+                      android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+            <TextView
+                    android:id="@+id/surgeries_tab"
+                    android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:text="No"
+                      android:gravity="center_horizontal"
+                      android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+        </TableRow>
+        <TableRow android:padding="5dp"/>
+        <TableRow android:padding="5dp"/>
+
+    </TableLayout>
+
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>
